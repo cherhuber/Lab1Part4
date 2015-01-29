@@ -1,0 +1,8 @@
+# .gitignore
+
+#Java class file
+*.class
+build.xml
+build/
+manifest.mf
+nbproject/
