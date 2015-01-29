@@ -30,7 +30,6 @@ public class CarpetDriver {
         RoomCarpet myCarpet = new RoomCarpet(myRoom,c);//$8 per sq foot
         System.out.print("The total cost of a "+myRoom+" sqft room would be $");
         System.out.println(myCarpet);
-        System.out.println("I hope you like your new carpet!");
     }
     
 }
