@@ -17,15 +17,17 @@ public class CarpetDriver {
      */
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        double l,w;
+        double l,w,c;
         System.out.println("Please enter room dimensions in feet.");
         System.out.print("Enter length:");
         l = in.nextDouble();
         System.out.print("Enter width:");
         w = in.nextDouble();
+        System.out.print("Enter cost per foot:");
+        c = in.nextDouble();
         
         RoomDimension myRoom = new RoomDimension(l,w);
-        RoomCarpet myCarpet = new RoomCarpet(myRoom,8.00);//$8 per sq foot
+        RoomCarpet myCarpet = new RoomCarpet(myRoom,c);//$8 per sq foot
         System.out.print("The total cost of a "+myRoom+" sqft room would be $");
         System.out.println(myCarpet);
     }
